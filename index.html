@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caption — A new caption drops daily</title>
+<meta name="description" content="Every day, a new caption drops. Capture the best photo for it, climb the leaderboard, and connect with friends. Coming soon to TestFlight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">Caption</div>
+    <a href="#waitlist" class="nav-cta">Join the waitlist</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="badge">🚀 Coming soon to TestFlight</div>
+    <h1>A new caption drops<br>every day.</h1>
+    <p class="subhead">
+      Capture the best photo for today's caption. Get ranked on the daily leaderboard.
+      Add friends and see how you stack up.
+    </p>
+
+    <form id="waitlist-form" class="waitlist-form" action="https://formspree.io/f/mrpgkleg" method="POST">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="you@example.com"
+        required
+        autocomplete="email"
+      >
+      <button type="submit">Join waitlist</button>
+    </form>
+    <p id="form-message" class="form-message" hidden></p>
+    <p class="fine-print">No spam. We'll email you the moment Caption is ready to test.</p>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>A caption drops</h3>
+        <p>Every day at the same time, a new prompt appears for everyone. Same caption, different eyes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>You capture it</h3>
+        <p>Find or shoot the photo that best matches today's caption before the day resets.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>You get ranked</h3>
+        <p>Submissions are ranked on a live leaderboard. Best interpretation wins the day.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>You connect</h3>
+        <p>Add friends, follow their streaks, and see how your eye for a caption compares to theirs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist-cta" id="waitlist">
+    <h2>Be first to play.</h2>
+    <p>Caption is heading to TestFlight soon. Join the waitlist and we'll send you an invite.</p>
+    <a href="#" class="cta-button" id="scroll-to-form">Join the waitlist ↑</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Caption. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
