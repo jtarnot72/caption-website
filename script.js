@@ -39,7 +39,7 @@ const scrollToForm = document.getElementById('scroll-to-form');
 if (scrollToForm) {
   scrollToForm.addEventListener('click', (e) => {
     e.preventDefault();
-    document.getElementById('email').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    document.getElementById('email').focus();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => document.getElementById('email').focus(), 600);
   });
 }
